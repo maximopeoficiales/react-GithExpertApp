@@ -10,7 +10,7 @@ const defaultProps = {
 
 const AddCategory = (props: MyProps) => {
   props = { ...defaultProps, ...props };
-  
+
   const [value, setValue] = useState("Hola bro");
   const handlerChange = (e: any) => {
     setValue(e.target.value);
@@ -23,10 +23,16 @@ const AddCategory = (props: MyProps) => {
     }
   };
   return (
-    <div className="">
-      <h4>{value}</h4>
+    <div className="container-input">
+      {/* <p>Search:</p> */}
       <form onSubmit={handlerSubmit}>
-        <input type="text" value={value} onChange={handlerChange} />
+        <input
+          type="text"
+          value={value}
+          className="input-query"
+          onChange={handlerChange}
+          placeholder="Search"
+        />
       </form>
     </div>
   );

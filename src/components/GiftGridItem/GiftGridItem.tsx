@@ -9,9 +9,9 @@ const GiftGridItem = (props: MyProps) => {
   const { image } = props;
 
   return (
-    <div data-testid="GiftGridItem">
-      <h1>{image.title}</h1>
+    <div data-testid="GiftGridItem" className="card-gift">
       <img src={image.imgUrl} alt="" />
+      <h1>{image.title}</h1>
     </div>
   );
 };

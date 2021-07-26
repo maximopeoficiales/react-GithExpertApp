@@ -13,14 +13,14 @@ const GiftGrid = (props: MyProps) => {
   const { gifts, loading } = useFetchGifs(category);
 
   return (
-    <div data-testid="GiftGrid">
-      <h1>{category}</h1>
-      <p>{loading ? "Cargando" : "Data Cargada"}</p>
-      <ol>
+    <div data-testid="GiftGrid" className="container-grid">
+      <h1 className="title-category">{category}</h1>
+      <p className="text-loading">{loading ? "Cargando...." : ""}</p>
+      <div className="card-grid">
         {gifts.map((e: GiftImage) => (
           <GiftGridItem key={e.id} image={e} />
         ))}
-      </ol>
+      </div>
     </div>
   );
 };
