@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import AddCategory from "../AddCategory/AddCategory";
+import GiftGrid from "../GiftGrid/GiftGrid";
 
-interface MyProps {
-  text?: string;
-  optionalText?: string;
-}
-const defaultProps = {
-  optionalText: "Soy un subtitulo opcional",
-};
+interface MyProps {}
+const defaultProps = {};
 const GiftExpertApp = (props: MyProps) => {
   props = { ...defaultProps, ...props };
-  const [categorys, setCategorys] = useState(["maximo", "hoal", "jlkj"]);
+
+  const [categorys, setCategorys] = useState(["rick and morty"]);
   const handlerClick = (category: string) => {
-    setCategorys([...categorys, category]);
+    setCategorys([category, ...categorys]);
   };
   return (
     <div>
@@ -20,7 +17,7 @@ const GiftExpertApp = (props: MyProps) => {
       <AddCategory addCategory={handlerClick} />
       <ol>
         {categorys.map((e) => {
-          return <li key={e}>{e}</li>;
+          return <GiftGrid key={e} category={e} />;
         })}
       </ol>
     </div>
