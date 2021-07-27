@@ -2,7 +2,7 @@
   "name": "gift-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://maximopeoficiales.github.io/react-GithExpertApp",
+  "homepage": "https://maximopeoficiales.github.io/react-GithExpertApp",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -18,8 +18,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,6 +45,10 @@
     ]
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.9",
+    "@types/enzyme-to-json": "^1.5.4",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "enzyme-to-json": "^3.6.2",
     "generate-react-cli": "^7.0.3",
     "gh-pages": "^3.2.3"
   }

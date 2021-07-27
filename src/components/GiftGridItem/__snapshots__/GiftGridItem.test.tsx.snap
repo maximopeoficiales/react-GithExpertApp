@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GiftGridItem /> debe de mostrar <GiftGridItem/> 1`] = `
+<div
+  className="card-gift  "
+  data-testid="GiftGridItem"
+>
+  <img
+    alt=""
+    src="imge..."
+  />
+  <a
+    href="https://i.picsum.photos/id/189/200/200.jpg?hmac=D4dFU1JWalnD5ZptSD-jGDOEc8abV1vBRfC5HstzT_8"
+  >
+    <h1>
+      algun titulo
+    </h1>
+  </a>
+</div>
+`;
