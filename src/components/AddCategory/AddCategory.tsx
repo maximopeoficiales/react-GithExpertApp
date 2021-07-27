@@ -11,7 +11,7 @@ const defaultProps = {
 const AddCategory = (props: MyProps) => {
   props = { ...defaultProps, ...props };
 
-  const [value, setValue] = useState("Hola bro");
+  const [value, setValue] = useState("");
   const handlerChange = (e: any) => {
     setValue(e.target.value);
   };

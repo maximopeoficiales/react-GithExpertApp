@@ -11,7 +11,9 @@ const GiftGridItem = (props: MyProps) => {
   return (
     <div data-testid="GiftGridItem" className="card-gift">
       <img src={image.imgUrl} alt="" />
-      <h1>{image.title}</h1>
+      <a href={image.bitly_url}>
+        <h1>{image.title}</h1>
+      </a>
     </div>
   );
 };

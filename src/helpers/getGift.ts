@@ -6,7 +6,7 @@ const getGiftByCategory = async (category: string) => {
             await fetch(
                 `https://api.giphy.com/v1/gifs/search?api_key=R4crr9k3wTfV8ISXAxeiCr51A5qQNGaA&q=${encodeURI(
                     category
-                )}&limit=10`
+                )}&limit=12`
             )
         ).json();
 
