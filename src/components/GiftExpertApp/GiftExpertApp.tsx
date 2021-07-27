@@ -13,8 +13,11 @@ const GiftExpertApp = (props: MyProps) => {
   };
   return (
     <div>
-      <h2 className="title-app">GiftAppReact</h2>
-      <AddCategory addCategory={handlerClick} />
+      <div className="animate__animated animate__bounce">
+        <h2 className="title-app">GiftAppReact</h2>
+        <AddCategory addCategory={handlerClick} />
+      </div>
+
       <div className="">
         {categorys.map((e) => {
           return <GiftGrid key={e} category={e} />;

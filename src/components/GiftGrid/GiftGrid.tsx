@@ -16,7 +16,7 @@ const GiftGrid = (props: MyProps) => {
     <div data-testid="GiftGrid" className="container-grid">
       <h1 className="title-category">{category}</h1>
       <p className="text-loading">{loading ? "Cargando...." : ""}</p>
-      <div className="card-grid">
+      <div className="card-grid animate__animated animate__backInLeft">
         {gifts.map((e: GiftImage) => (
           <GiftGridItem key={e.id} image={e} />
         ))}
