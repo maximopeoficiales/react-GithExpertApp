@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import AddCategory from "../AddCategory/AddCategory";
 import GiftGrid from "../GiftGrid/GiftGrid";
 
-interface MyProps {}
-const defaultProps = {};
+interface MyProps {
+  categorysStatic: string[];
+}
+const defaultProps: MyProps = {
+  categorysStatic: ["rick and morty"],
+};
 const GiftExpertApp = (props: MyProps) => {
   props = { ...defaultProps, ...props };
 
-  const [categorys, setCategorys] = useState(["rick and morty"]);
+  const [categorys, setCategorys] = useState(props.categorysStatic);
   const handlerClick = (category: string) => {
     setCategorys([category, ...categorys]);
   };

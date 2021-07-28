@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 interface MyProps {}
-const defaultProps = {};
+const defaultProps: MyProps = {};
 const TemplateName = (props: MyProps) => {
   props = { ...defaultProps, ...props };
 
   return (
-    <div  data-testid="TemplateName">
-    <h1>TemplateName component</h1>
+    <div data-testid="TemplateName">
+      <h1>TemplateName component</h1>
     </div>
   );
 };

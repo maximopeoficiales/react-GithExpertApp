@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GiftGrid /> debe de mostrar el snapshot <GiftGrid/> 1`] = `
+<div
+  className="container-grid"
+  data-testid="GiftGrid"
+>
+  <h1
+    className="title-category"
+  >
+    Pokemon
+  </h1>
+  <p
+    className="text-loading"
+  >
+    Cargando....
+  </p>
+  <div
+    className="card-grid animate__animated animate__backInLeft"
+  />
+</div>
+`;
+
+exports[`<GiftGrid /> debe mostrar items cuando se cargan las images useFetchGifs <GiftGrid/> 1`] = `
+<div
+  className="container-grid"
+  data-testid="GiftGrid"
+>
+  <h1
+    className="title-category"
+  >
+    Pokemon
+  </h1>
+  <p
+    className="text-loading"
+  />
+  <div
+    className="card-grid animate__animated animate__backInLeft"
+  >
+    <GiftGridItem
+      image={
+        Object {
+          "bitly_url": "algun link",
+          "id": "43",
+          "imgUrl": "alguna url",
+          "title": "algun titulo",
+        }
+      }
+      key="43"
+    />
+  </div>
+</div>
+`;

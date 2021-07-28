@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GiftExpertApp /> it should mount 1`] = `
+<div>
+  <div
+    className="animate__animated animate__bounce"
+  >
+    <h2
+      className="title-app"
+    >
+      GiftAppReact
+    </h2>
+    <AddCategory
+      addCategory={[Function]}
+    />
+  </div>
+  <div
+    className=""
+  >
+    <GiftGrid
+      category="rick y morty"
+      key="rick y morty"
+    />
+  </div>
+</div>
+`;
