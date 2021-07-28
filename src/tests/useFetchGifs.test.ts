@@ -22,7 +22,7 @@ describe("Prueba en el hook useFetchGifts", () => {
         // espero que se cambie el estado
         expect(gifts.length).toBe(12);
         expect(loading).toBeFalsy();
-        console.log(gifts, loading);
+        // console.log(gifts, loading);
     })
 
 
